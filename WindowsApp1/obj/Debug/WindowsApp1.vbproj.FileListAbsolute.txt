@@ -2,10 +2,11 @@ C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.pdb
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.xml
-C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbprojAssemblyReference.cache
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Form1.resources
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.Resources.resources
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.exe
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.xml
 C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\obj\Debug\WindowsApp1.pdb
+C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.CodeAnalysisLog.xml
+C:\Users\Student\source\repos\WindowsApp1\WindowsApp1\bin\Debug\WindowsApp1.exe.lastcodeanalysissucceeded

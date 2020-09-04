@@ -275,6 +275,7 @@ Partial Class Form1
         Me.MaximumSize = New System.Drawing.Size(268, 282)
         Me.MinimumSize = New System.Drawing.Size(268, 282)
         Me.Name = "Form1"
+        Me.ShowIcon = False
         Me.Text = "Калькулятор"
         Me.ResumeLayout(False)
         Me.PerformLayout()

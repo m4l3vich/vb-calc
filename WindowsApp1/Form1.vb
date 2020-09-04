@@ -23,6 +23,7 @@
         firstNum = Nothing
         secondNum = Nothing
         action = Nothing
+        TextBox1.Text = ""
         AddNumber(0)
     End Sub
 
