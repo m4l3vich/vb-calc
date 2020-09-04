@@ -270,6 +270,7 @@ Partial Class Form1
         Me.Controls.Add(Me.BtnSqrt)
         Me.Controls.Add(Me.BtnClr)
         Me.Controls.Add(BtnBsp)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(268, 282)
         Me.MinimumSize = New System.Drawing.Size(268, 282)

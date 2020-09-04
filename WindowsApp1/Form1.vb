@@ -1,12 +1,14 @@
 ﻿Public Class Form1
     Dim action As String
-    Dim firstNum As Long
-    Dim secondNum As Long
+    Dim firstNum As Decimal
+    Dim secondNum As Decimal
 
     Private Sub AddNumber(num As Integer)
+        ' Если действие задано, добавить цифру ко второму числу
         If action <> Nothing Then
             secondNum = Val(Str(secondNum) + Str(num))
             TextBox1.Text = Str(secondNum)
+            ' Если действие не задано, добавить к первому
         Else
             firstNum = Val(Str(firstNum) + Str(num))
             TextBox1.Text = Str(firstNum)
@@ -40,7 +42,7 @@
     End Sub
 
     Private Sub Evaluate()
-        Dim result As Long
+        Dim result As Decimal
 
         If action = "add" Then
             result = firstNum + secondNum
@@ -52,11 +54,25 @@
             result = firstNum / secondNum
         End If
 
+        ' Записать результат в первое число, а второе очистить
         firstNum = result
         secondNum = Nothing
+        ' Записать результат в текстовое поле
         TextBox1.Text = Str(result)
+        ' Очистить текущее действие
         action = Nothing
         Label1.Text = ""
+    End Sub
+
+    Private Sub BtnSqrt_Click(sender As Object, e As EventArgs) Handles BtnSqrt.Click
+        ' Прочитать текущее значение текстового поля
+        Dim num As String = TextBox1.Text
+        ' Очистить состояние калькулятора
+        Clear()
+        ' Подсчитать результат и записать в текстовое поле
+        TextBox1.Text = Str(Math.Sqrt(Val(num)))
+        ' Записать значение текстового поля в первое число
+        firstNum = Val(TextBox1.Text)
     End Sub
 
     Private Sub Btn7_Click(sender As Object, e As EventArgs) Handles Btn7.Click
@@ -116,11 +132,5 @@
 
     Private Sub BtnEql_Click(sender As Object, e As EventArgs) Handles BtnEql.Click
         Evaluate()
-    End Sub
-
-    Private Sub BtnSqrt_Click(sender As Object, e As EventArgs) Handles BtnSqrt.Click
-        Dim num As String = TextBox1.Text
-        Clear()
-        TextBox1.Text = Str(Math.Sqrt(Val(num)))
     End Sub
 End Class
