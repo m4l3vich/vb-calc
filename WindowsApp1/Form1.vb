@@ -6,11 +6,11 @@
     Private Sub AddNumber(num As Integer)
         ' Если действие задано, добавить цифру ко второму числу
         If action <> Nothing Then
-            secondNum = Val(Str(secondNum) + Str(num))
+            secondNum = Val(TextBox1.Text + Str(num))
             TextBox1.Text = Str(secondNum)
             ' Если действие не задано, добавить к первому
         Else
-            firstNum = Val(Str(firstNum) + Str(num))
+            firstNum = Val(TextBox1.Text + Str(num))
             TextBox1.Text = Str(firstNum)
         End If
     End Sub
@@ -23,16 +23,20 @@
     End Sub
 
     Private Sub Backspace()
+        ' Если в поле больше двух символов...
         If TextBox1.Text.Length > 2 Then
+            ' Удалить последний символ из поля
             TextBox1.Text = Mid(
                 TextBox1.Text, 1, TextBox1.Text.Length - 1
             )
         Else
+            ' Иначе - установить "0"
             TextBox1.Text = "0"
         End If
     End Sub
 
     Private Sub SetAction(act As String)
+        ' Если уже задано второе число, то сначала вычислить
         If secondNum <> Nothing Then
             Evaluate()
         End If
