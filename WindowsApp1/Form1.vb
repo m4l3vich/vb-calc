@@ -6,6 +6,10 @@
     Private Sub AddNumber(num As Integer)
         ' Если действие задано, добавить цифру ко второму числу
         If action <> Nothing Then
+            ' Если второе число ещё не введено, сначала очистить поле
+            If secondNum = Nothing Then
+                TextBox1.Text = ""
+            End If
             secondNum = Val(TextBox1.Text + Str(num))
             TextBox1.Text = Str(secondNum)
             ' Если действие не задано, добавить к первому
